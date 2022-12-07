@@ -39,4 +39,8 @@ router.post('/createStudent', async (req, res) => {
     }
 });
 
+router.post('/findStudent', async (req, res) => {
+    const Student = new StudentModel(req.body);
+});
+
 module.exports = router;
